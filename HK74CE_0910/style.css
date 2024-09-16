@@ -1,0 +1,122 @@
+/* Törzs tulajdonságai */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fejléc h1 tulajdonságai */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* h2 tulajdonságai */
+header h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Fejléc bekezdés tulajdonságai */
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+/* Fejléc kép */
+header img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigációs sáv */
+nav {
+    background-color: #555;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Navigációs sáv lista tulajdonságai */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigációs sáv listaelemek tulajdonságai */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Navigációs sáv linkek tulajdonsága */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Navigációs sáv linkek hover */
+nav ul li a:hover {
+    background-color: #777;
+}
+
+/* Szekció tulajdonságai */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Szekció h2 tulajdonságai */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Szekció h3 tulajdonságai */
+section h3 {
+    font-size: 1.1em;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Szekció bekezdés tulajdonságai */
+section p {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+/* Szekció kép tulajdonságai */
+section img {
+    max-width: 500px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lábléc tulajdonságai */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 0.8em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
