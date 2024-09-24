@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+    <cím>Modern Technológiák Konferencia</cím>
+    <dátum>2024-11-05</dátum>
+    
+    <előadó>
+        <név>Dr. Kovács Zoltán</név>
+        <lakcím>Budapest, Fő utca 12.</lakcím>
+        <adószám>12345678-1-42</adószám>
+    </előadó>
+
+    <helyszín>Budapest Kongresszusi Központ</helyszín>
+
+    <hallgatók>
+        <hallgató>
+            <név>Nagy Péter</név>
+            <lakcím>Szeged, Kossuth utca 45.</lakcím>
+        </hallgató>
+        <hallgató>
+            <név>Kiss Balázs</név>
+            <lakcím>Debrecen, Petőfi tér 3.</lakcím>
+        </hallgató>
+    </hallgatók>
+</konferencia>
