@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mozi SYSTEM "HK74CE_mozi.dtd">
+
+<mozi>
+    <film id="film001" mufaj="horror">
+        <rendezo id="rendezo001" nev="Alex"/>
+        <szinesz id="szinesz001" nev="Madison Ivy"/>
+        <iro id="iro001"/>
+    </film>
+
+    <film id="film002" mufaj="akcio">
+        <rendezo id="rendezo002" nev="James Cameron"/>
+        <szinesz id="szinesz002" nev="Arnold Schwarzenegger"/>
+        <szinesz id="szinesz003" nev="Linda Hamilton"/>
+        <iro id="iro002"/>
+    </film>
+</mozi>
