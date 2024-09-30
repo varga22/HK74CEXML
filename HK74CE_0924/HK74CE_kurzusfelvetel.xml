@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Neptunkod_kurzusfelvetel tanév="2024/25/I" egyetem="ME">
+    <hallgato>
+        <hnev>Varga Bence</hnev>
+        <szulev>2000</szulev>
+        <szak evf="3">Programtervező Informatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="HK74CE01" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Számítógép Hálózatok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXVII. előadó</hely>
+            <idopont>
+                <nap>Hétfő</nap>
+                <tol>08:00</tol>
+                <ig>09:30</ig>
+            </idopont>
+            <oktato>Dr. Kovács Szilveszter</oktato>
+            <oraado>Gyakorlat</oraado>
+        </kurzus>
+        <kurzus id="HK74CE02" jovahagyas="igen" nyelv="angol">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>103-as terem</hely>
+            <idopont>
+                <nap>Kedd</nap>
+                <tol>10:00</tol>
+                <ig>11:30</ig>
+            </idopont>
+            <oktato>Bednarik László</oktato>
+            <oraado>Előadás</oraado>
+        </kurzus>
+        <kurzus id="HK74CE03">
+            <kurzusnev>Szoftvertechnológia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>III. előadó</hely>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>08:00</tol>
+                <ig>10:00</ig>
+            </idopont>
+            <oktato>Dr. Mileff Péter</oktato>
+        </kurzus>
+        <kurzus id="HK74CE04">
+            <kurzusnev>Vállalati Információs Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>103-as terem</hely>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <oktato>Dr. Sasvári Péter</oktato>
+        </kurzus>
+        <kurzus id="HK74CE05">
+            <kurzusnev>Mesterséges Intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII. előadó</hely>
+            <idopont>
+                <nap>Szerda</nap>
+                <tol>16:00</tol>
+                <ig>18:00</ig>
+            </idopont>
+            <oktato>Dr. Kunné Tamás Judit</oktato>
+        </kurzus>
+    </kurzusok>
+</Neptunkod_kurzusfelvetel>
