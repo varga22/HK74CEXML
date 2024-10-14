@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HK74CE_vendeglatas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="XML_HK74CE.xsd">
+    
+    <!-- Foszakacsok -->
+    <Foszakacs fkod="f1" e_f="e1">
+        <nev>Varga Bela</nev>
+        <eletkor>45</eletkor>
+        <vegzettseg>Szakkozep</vegzettseg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </Foszakacs>
+
+    <Foszakacs fkod="f2" e_f="e2">
+        <nev>Kis Andras</nev>
+        <eletkor>37</eletkor>
+        <vegzettseg>Le Cordon Bleu</vegzettseg>
+        <vegzettseg>Egyetem</vegzettseg>
+    </Foszakacs>
+
+    <!-- Ettermek -->
+    <Etterem ekod="e1">
+        <nev>Hableany</nev>
+        <cim>
+            <varos>Tiszaorveny</varos>
+            <utca>Orvenyi utca</utca>
+            <hazszam>14</hazszam>
+        </cim>
+        <csillag>3</csillag>
+    </Etterem>
+
+    <Etterem ekod="e2">
+        <nev>Feher Amur</nev>
+        <cim>
+            <varos>Tiszafured</varos>
+            <utca>Huszoles ut</utca>
+            <hazszam>40</hazszam>
+        </cim>
+        <csillag>4</csillag>
+    </Etterem>
+
+    <!-- Szakacsok -->
+    <Szakacs szkod="sz1" e_sz="e1">
+        <nev>Kiss Peter</nev>
+        <reszleg>Pizza</reszleg>
+        <vegzettseg>Szakacs</vegzettseg>
+        <vegzettseg>Szakkozepiskola</vegzettseg>
+    </Szakacs>
+
+    <Szakacs szkod="sz2" e_sz="e2">
+        <nev>Nagy László</nev>
+        <reszleg>Hamburger</reszleg>
+        <vegzettseg>Szakács</vegzettseg>
+        <vegzettseg>Burgersuto</vegzettseg>
+    </Szakacs>
+
+    <!-- Gyakornokok -->
+    <Gyakornok gykod="gy1" e_gy="e1">
+        <nev>Juhász Anna</nev>
+        <gyakorlat>
+            <Kezdete>2023-06-01</Kezdete>
+            <Idotartama>6 honap</Idotartama>
+        </gyakorlat>
+        <muszak>Delelott</muszak>
+        <muszak>Este</muszak>
+    </Gyakornok>
+
+    <Gyakornok gykod="gy2" e_gy="e2">
+        <nev>Nagy Erno</nev>
+        <gyakorlat>
+            <Kezdete>2023-01-01</Kezdete>
+            <Idotartama>4 honap</Idotartama>
+        </gyakorlat>
+        <muszak>Reggel</muszak>
+        <muszak>Delutan</muszak>
+    </Gyakornok>
+
+    <!-- Rendelesek -->
+    <Rendeles e_v_e="e1" e_v_v="v1">
+        <etel>Pizza</etel>
+        <osszeg>4200</osszeg>
+    </Rendeles>
+
+    <Rendeles e_v_e="e2" e_v_v="v2">
+        <etel>Hamburger</etel>
+        <osszeg>2500</osszeg>
+    </Rendeles>
+
+    <Rendeles e_v_e="e3" e_v_v="v3">
+        <etel>SajtosHamburger</etel>
+        <osszeg>2700</osszeg>
+    </Rendeles>
+
+    <!-- Vendegek -->
+    <Vendeg vkod="v1">
+         <nev>Kovács András</nev>
+        <eletkor>30</eletkor>
+        <cim>
+            <Varos>Szeged</Varos>
+            <Utca>Kossuth utca</Utca>
+            <Hazszam>4</Hazszam>
+        </cim>
+    </Vendeg>
+
+    <Vendeg vkod="v2">
+        <nev>Nagy Sára</nev>
+        <eletkor>25</eletkor>
+        <cim>
+            <Varos>Debrecen</Varos>
+            <Utca>Petőfi utca</Utca>
+            <Hazszam>7</Hazszam>
+        </cim>
+    </Vendeg>
+
+</HK74CE_vendeglatas>

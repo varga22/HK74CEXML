@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Egyszerű típusok -->
+    <xs:simpleType name="szovegTipus">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="pozitivSzamTipus">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="csillagTipus">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="datumTipus">
+        <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+
+    <!-- Foszakacsok -->
+    <xs:element name="Foszakacs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nev" type="szovegTipus"/>
+                <xs:element name="eletkor" type="pozitivSzamTipus"/>
+                <xs:element name="vegzettseg" type="szovegTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="fkod" type="szovegTipus" use="required"/>
+            <xs:attribute name="e_f" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Ettermek -->
+    <xs:element name="Etterem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nev" type="szovegTipus"/>
+                <xs:element name="cim">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="varos" type="szovegTipus"/>
+                            <xs:element name="utca" type="szovegTipus"/>
+                            <xs:element name="hazszam" type="pozitivSzamTipus"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="csillag" type="csillagTipus"/>
+            </xs:sequence>
+            <xs:attribute name="ekod" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Szakacsok -->
+    <xs:element name="Szakacs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nev" type="szovegTipus"/>
+                <xs:element name="reszleg" type="szovegTipus"/>
+                <xs:element name="vegzettseg" type="szovegTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="szkod" type="szovegTipus" use="required"/>
+            <xs:attribute name="e_sz" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Gyakornokok -->
+    <xs:element name="Gyakornok">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nev" type="szovegTipus"/>
+                <xs:element name="gyakorlat">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Kezdete" type="datumTipus"/>
+                            <xs:element name="Idotartama" type="szovegTipus"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="muszak" type="szovegTipus" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="gykod" type="szovegTipus" use="required"/>
+            <xs:attribute name="e_gy" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Rendelesek -->
+    <xs:element name="Rendeles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="etel" type="szovegTipus"/>
+                <xs:element name="osszeg" type="pozitivSzamTipus"/>
+            </xs:sequence>
+            <xs:attribute name="e_v_e" type="szovegTipus" use="required"/>
+            <xs:attribute name="e_v_v" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Vendegek -->
+    <xs:element name="Vendeg">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nev" type="szovegTipus"/>
+                <xs:element name="eletkor" type="pozitivSzamTipus"/>
+                <xs:element name="cim">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Varos" type="szovegTipus"/>
+                            <xs:element name="Utca" type="szovegTipus"/>
+                            <xs:element name="Hazszam" type="pozitivSzamTipus"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="vkod" type="szovegTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Gyökérelem -->
+    <xs:element name="HK74CE_vendeglatas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Foszakacs" maxOccurs="unbounded"/>
+                <xs:element ref="Etterem" maxOccurs="unbounded"/>
+                <xs:element ref="Szakacs" maxOccurs="unbounded"/>
+                <xs:element ref="Gyakornok" maxOccurs="unbounded"/>
+                <xs:element ref="Rendeles" maxOccurs="unbounded"/>
+                <xs:element ref="Vendeg" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
