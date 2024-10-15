@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Saját típusok definiálása -->
+    <xs:simpleType name="tanevTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{4}/\d{2}/(I|II)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="egyetemTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ME"/>
+            <xs:enumeration value="BME"/>
+            <xs:enumeration value="ELTE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="idTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="HK\d{2}[A-Z]{2}\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="igenNemTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="igen"/>
+            <xs:enumeration value="nem"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Hallgató elem definiálása -->
+    <xs:element name="hallgato">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hnev" type="xs:string"/>
+                <xs:element name="szulev" type="xs:positiveInteger"/>
+                <xs:element name="szak">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="evf" type="xs:positiveInteger" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Időpont elem definiálása -->
+    <xs:complexType name="idopontTipus">
+        <xs:sequence>
+            <xs:element name="nap" type="xs:string"/>
+            <xs:element name="tol" type="xs:string"/>
+            <xs:element name="ig" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Kurzus elem definiálása -->
+    <xs:element name="kurzus">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="kurzusnev" type="xs:string"/>
+                <xs:element name="kredit" type="xs:positiveInteger"/>
+                <xs:element name="hely" type="xs:string"/>
+                <xs:element name="idopont" type="idopontTipus"/>
+                <xs:element name="oktato" type="xs:string"/>
+                <xs:element name="oraado" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="idTipus" use="required"/>
+            <xs:attribute name="jovahagyas" type="igenNemTipus"/>
+            <xs:attribute name="nyelv" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Kurzusok elem definiálása -->
+    <xs:element name="kurzusok">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="kurzus" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Neptun kód kurzusfelvétel fő eleme -->
+    <xs:element name="Neptunkod_kurzusfelvetel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="hallgato"/>
+                <xs:element ref="kurzusok"/>
+            </xs:sequence>
+            <xs:attribute name="tanev" type="tanevTipus" use="required"/>
+            <xs:attribute name="egyetem" type="egyetemTipus" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
