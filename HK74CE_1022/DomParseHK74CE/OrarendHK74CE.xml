@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<VB_orarend>
+    <ora id="01" típus="előadás">
+        <targy>Számítógép Hálózatok</targy>
+        <idopont>
+            <nap>Hétfő</nap>
+            <tol>08:00</tol>
+            <ig>09:30</ig>
+        </idopont>
+        <helyszin>XXXVII. előadó</helyszin>
+        <oktato>Dr. Kovács Szilveszter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    
+    <ora id="02" típus="előadás">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>10:00</tol>
+            <ig>11:30</ig>
+        </idopont>
+        <helyszin>103-es terem</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    
+    <ora id="03" típus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>Kedd</nap>
+            <tol>12:00</tol>
+            <ig>13:30</ig>
+        </idopont>
+        <helyszin>103-as terem</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    
+    <ora id="04" típus="előadás">
+        <targy>Szoftvertechnológia</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>8:00</tol>
+            <ig>10:00</ig>
+        </idopont>
+        <helyszin>III. előadó</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+    
+    <ora id="05" típus="gyakorlat">
+        <targy>Szoftvertechnológia</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>III. előadó</helyszin>
+        <oktato>Dr. Mileff Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="05" típus="gyakorlat">
+        <targy>Mesterséges Intelligencia alapok</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>X. előadó</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="05" típus="előadás">
+        <targy>Vállalati Információs rendszerek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>14:00</tol>
+            <ig>16:00</ig>
+        </idopont>
+        <helyszin>103. terem</helyszin>
+        <oktato>Dr. Sasvári Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="05" típus="előadás">
+        <targy>Mesterésges Intelligencia alapok</targy>
+
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>16:00</tol>
+            <ig>18:00</ig>
+        </idopont>
+        <helyszin>XXXII. előadó</helyszin>
+        <oktato>Dr. Kunné Tamás Judit</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="05" típus="gyakorlat">
+        <targy>Vállalati információs rendszerek</targy>
+        <idopont>
+            <nap>Szerda</nap>
+            <tol>18:00</tol>
+            <ig>20:00</ig>
+        </idopont>
+        <helyszin>103. terem</helyszin>
+        <oktato>Dr. Sasvári Péter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="05" típus="gyakorlat">
+        <targy>Számítógép Hálózatok</targy>
+        <idopont>
+            <nap>Csütörtök</nap>
+            <tol>10:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>III. előadó</helyszin>
+        <oktato>Dr. Kovács Szilveszter</oktato>
+        <szak>Programtervező Informatikus</szak>
+    </ora>
+</VB_orarend>
