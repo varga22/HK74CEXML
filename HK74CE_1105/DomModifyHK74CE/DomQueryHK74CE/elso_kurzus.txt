@@ -1,8 +1,0 @@
-ID: 01
-Típus: előadás
-Tárgy: Számítógép Hálózatok
-Nap: Hétfő
-Idő: 08:00 - 09:30
-Helyszín: XXXVII. előadó
-Oktató: Dr. Kovács Szilveszter
-Szak: Programtervező Informatikus
