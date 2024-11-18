@@ -21,7 +21,7 @@
             <ig>11:30</ig>
         </idopont>
         <helyszin>103-es terem</helyszin>
-        <oktato>Bednarik László</oktato>
+        <oktato>Dr. Bednarik László</oktato>
         <szak>Programtervező Informatikus</szak>
     </ora>
     
@@ -32,8 +32,8 @@
             <tol>12:00</tol>
             <ig>13:30</ig>
         </idopont>
-        <helyszin>303-as terem</helyszin>
-        <oktato>Dr. Farkas Gábor</oktato>
+        <helyszin>103-as terem</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
         <szak>Programtervező Informatikus</szak>
     </ora>
     
