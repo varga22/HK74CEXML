@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Sajáttípusok definiálása -->
+    <!-- Név összetett típus -->
+    <xsd:complexType name="NevTipus">
+        <xsd:sequence>
+            <xsd:element name="Keresztnev" type="xsd:string"/>
+            <xsd:element name="Vezeteknev" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Lakcím összetett típus -->
+    <xsd:complexType name="LakcimTipus">
+        <xsd:sequence>
+            <xsd:element name="Varos" type="xsd:string"/>
+            <xsd:element name="Utca" type="xsd:string"/>
+            <xsd:element name="Hazszam" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Tipus összetett típus (előadás és gyakorlat jelölése) -->
+    <xsd:complexType name="TipusTipus">
+        <xsd:sequence>
+            <xsd:element name="Eloadas" type="xsd:boolean"/>
+            <xsd:element name="Gyakorlat" type="xsd:boolean"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Fő gyökérelem -->
+    <xsd:element name="HK74CE_oktatas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <!-- Diákok gyűjteménye -->
+                <xsd:element name="Diakok">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Diak" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="DiakID" type="xsd:string"/>
+                                        <xsd:element name="Nev" type="NevTipus"/>
+                                        <xsd:element name="SzulDatum" type="xsd:date"/>
+                                        <xsd:element name="Email" type="xsd:string" maxOccurs="unbounded"/>
+                                        <xsd:element name="Lakcim" type="LakcimTipus"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- Tanárok gyűjteménye -->
+                <xsd:element name="Tanarok">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Tanar" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="TanarID" type="xsd:string"/>
+                                        <xsd:element name="Nev" type="NevTipus"/>
+                                        <xsd:element name="Beosztas" type="xsd:string"/>
+                                        <xsd:element name="Szakterulet" type="xsd:string"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- Tantárgyak gyűjteménye -->
+                <xsd:element name="Tantargyak">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Tantargy" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="TargyID" type="xsd:string"/>
+                                        <xsd:element name="Nev" type="xsd:string"/>
+                                        <xsd:element name="Kredit" type="xsd:integer"/>
+                                        <xsd:element name="Nyelv" type="xsd:string" maxOccurs="unbounded"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- Termek gyűjteménye -->
+                <xsd:element name="Termek">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Terem" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="TeremID" type="xsd:string"/>
+                                        <xsd:element name="Nev" type="xsd:string"/>
+                                        <xsd:element name="Kapacitas" type="xsd:integer"/>
+                                        <xsd:element name="Felszereles" type="xsd:string" maxOccurs="unbounded"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- Kurzusok gyűjteménye -->
+                <xsd:element name="Kurzusok">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Kurzus" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="KurzusID" type="xsd:string"/>
+                                        <xsd:element name="Idopont" type="xsd:string"/>
+                                        <xsd:element name="Tipus" type="TipusTipus"/>
+                                        <xsd:element name="Letszam" type="xsd:integer"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <!-- Kapcsolatok gyűjteménye -->
+                <xsd:element name="Kapcsolatok">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="DiakKurzusKapcsolatok">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="Kapcsolat" maxOccurs="unbounded">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="DiakID" type="xsd:string"/>
+                                                    <xsd:element name="KurzusID" type="xsd:string"/>
+                                                    <xsd:element name="Vizsga" type="xsd:integer"/>
+                                                    <xsd:element name="Alairas">
+                                                        <xsd:simpleType>
+                                                            <xsd:restriction base="xsd:string">
+                                                                <xsd:enumeration value="aláírva"/>
+                                                                <xsd:enumeration value="megtagadva"/>
+                                                            </xsd:restriction>
+                                                        </xsd:simpleType>
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

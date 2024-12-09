@@ -1,0 +1,86 @@
+Diákok adatai:
+
+Diák ID: HK74CE
+Név: Varga Bence
+Születési dátum: 2000-05-12
+Lakcím: Tiszafüred, Bán Zsigmond, 02
+
+Diák ID: AAA000
+Név: Nagy Anna
+Születési dátum: 1999-08-22
+Lakcím: Szeged, Kossuth tér, 5
+
+Diák ID: BBB000
+Név: Kis Péter
+Születési dátum: 2001-11-03
+Lakcím: Debrecen, Nagy utca, 8
+
+
+Tanárok adatai:
+
+Tanár ID: 101
+Név: Anna Szabó
+Beosztás: Docens
+Szakterület: Informatika
+
+Tanár ID: 102
+Név: Balázs Fekete
+Beosztás: Adjunktus
+Szakterület: Matematika
+
+Tanár ID: 103
+Név: Mária Fehér
+Beosztás: Oktató
+Szakterület: Fizika
+
+
+Tantárgyak adatai:
+
+Tantárgy ID: MAT101
+Név: Matematika
+Kredit: 5
+Nyelv: Magyar
+
+Tantárgy ID: INF202
+Név: Informatika
+Kredit: 5
+Nyelv: Magyar, Angol
+
+Tantárgy ID: ANG303
+Név: Angol
+Kredit: 4
+Nyelv: Angol
+
+
+Termek adatai:
+
+Terem ID: 218-9
+Név: X. előadó
+Kapacitás: 120
+Felszerelés: Függöny, Tábla
+
+Terem ID: 37
+Név: XXXVII. előadó
+Kapacitás: 400
+Felszerelés: Projektor, Függöny, TV
+
+Terem ID: In/103
+Név: Informatika tanterem
+Kapacitás: 30
+Felszerelés: Számítógépek
+
+
+Kurzusok adatai:
+
+Kurzus ID: KURZ001
+Időpont: 2024.12.05.
+Létszám: 30
+
+Kurzus ID: KURZ002
+Időpont: 2024.12.06.
+Létszám: 25
+
+Kurzus ID: KURZ003
+Időpont: 2024.12.07.
+Létszám: 40
+
