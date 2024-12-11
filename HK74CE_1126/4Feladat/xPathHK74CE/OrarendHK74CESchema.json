@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Orarend",
+    "type": "object",
+    "properties": {
+      "VB_orarend": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^\\d+$"
+            },
+            "típus": {
+              "type": "string",
+              "enum": ["előadás", "gyakorlat"]
+            },
+            "targy": {
+              "type": "string"
+            },
+            "idopont": {
+              "type": "object",
+              "properties": {
+                "nap": {
+                  "type": "string"
+                },
+                "tol": {
+                  "type": "string",
+                  "pattern": "^\\d{2}:\\d{2}$"
+                },
+                "ig": {
+                  "type": "string",
+                  "pattern": "^\\d{2}:\\d{2}$"
+                }
+              },
+              "required": ["nap", "tol", "ig"]
+            },
+            "helyszin": {
+              "type": "string"
+            },
+            "oktato": {
+              "type": "string"
+            },
+            "szak": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "típus", "targy", "idopont", "helyszin", "oktato", "szak"]
+        }
+      }
+    },
+    "required": ["VB_orarend"]
+  }
+  

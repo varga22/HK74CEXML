@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoHK74CE.xsl"?>
+<class>
+    <student id="HK74CE">
+        <keresztnev>Bence</keresztnev>
+        <vezeteknev>Varga</vezeteknev>
+        <becenev>Beni</becenev>
+        <kor>24</kor>
+        <osztondij>600000</osztondij>
+    </student>
+    <student id="02">
+        <keresztnev>Kek</keresztnev>
+        <vezeteknev>Dora</vezeteknev>
+        <becenev>Dorka</becenev>
+        <kor>20</kor>
+        <osztondij>520000</osztondij>
+    </student>
+    <student id="03">
+        <keresztnev>Zsoldos</keresztnev>
+        <vezeteknev>Andrea</vezeteknev>
+        <becenev>Andi</becenev>
+        <kor>18</kor>
+        <osztondij>450000</osztondij>
+    </student>
+</class>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptun Órarend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .orarend {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .entry {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Neptunkod Órarend 2024</h1>
+    <div id="orarend" class="orarend"></div>
+
+    <script>
+        const orarend = {
+            "VB_orarend": [
+                {
+                    "id": "01",
+                    "típus": "előadás",
+                    "targy": "Számítógép Hálózatok",
+                    "idopont": {
+                        "nap": "Hétfő",
+                        "tol": "08:00",
+                        "ig": "09:30"
+                    },
+                    "helyszin": "XXXVII. előadó",
+                    "oktato": "Dr. Kovács Szilveszter",
+                    "szak": "Programtervező Informatikus"
+                },
+                {
+                    "id": "02",
+                    "típus": "előadás",
+                    "targy": "Adatkezelés XML-ben",
+                    "idopont": {
+                        "nap": "Kedd",
+                        "tol": "10:00",
+                        "ig": "11:30"
+                    },
+                    "helyszin": "Inf/103",
+                    "oktato": "Dr. Bednarik László",
+                    "szak": "Programtervező Informatikus"
+                },
+                {
+                    "id": "03",
+                    "típus": "gyakorlat",
+                    "targy": "Adatkezelés XML-ben",
+                    "idopont": {
+                        "nap": "Kedd",
+                        "tol": "12:00",
+                        "ig": "13:30"
+                    },
+                    "helyszin": "Inf/103",
+                    "oktato": "Dr. Bednarik László",
+                    "szak": "Programtervező Informatikus"
+                }
+            
+            ]
+        };
+
+        const renderOrarend = (data) => {
+            const container = document.getElementById('orarend');
+            if (!container) {
+                console.error("Container not found");
+                return;
+            }
+            data.VB_orarend.forEach(entry => {
+                const div = document.createElement('div');
+                div.classList.add('entry');
+                div.innerHTML = `
+                    <p><strong>Tárgy:</strong> ${entry.targy}</p>
+                    <p><strong>Helyszín:</strong> ${entry.helyszin}</p>
+                    <p><strong>Oktató:</strong> ${entry.oktato}</p>
+                    <p><strong>Szak:</strong> ${entry.szak}</p>
+                    <p><strong>Időpont:</strong> ${entry.idopont.nap} ${entry.idopont.tol} - ${entry.idopont.ig}</p>
+                `;
+                container.appendChild(div);
+            });
+        };
+
+        renderOrarend(orarend);
+    </script>
+</body>
+</html>

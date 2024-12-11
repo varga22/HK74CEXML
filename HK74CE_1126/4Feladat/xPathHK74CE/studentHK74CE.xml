@@ -1,0 +1,21 @@
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="studentHK74CE.xsd">
+    <student id="1">
+        <keresztnev>Bence</keresztnev>
+        <vezeteknev>Varga</vezeteknev>
+        <becenev>Beni</becenev>
+        <kor>24</kor>
+    </student>
+    <student id="2">
+        <keresztnev>Anna</keresztnev>
+        <vezeteknev>Kovács</vezeteknev>
+        <becenev>Anci</becenev>
+        <kor>19</kor>
+    </student>
+    <student id="3">
+        <keresztnev>Péter</keresztnev>
+        <vezeteknev>Szabó</vezeteknev>
+        <becenev>Peti</becenev>
+        <kor>21</kor>
+    </student>
+</class>
