@@ -1,0 +1,134 @@
+{
+    "VB_orarend": [
+        {
+            "id": "01",
+            "típus": "előadás",
+            "targy": "Számítógép Hálózatok",
+            "idopont": {
+                "nap": "Hétfő",
+                "tol": "08:00",
+                "ig": "09:30"
+            },
+            "helyszin": "XXXVII. előadó",
+            "oktato": "Dr. Kovács Szilveszter",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "02",
+            "típus": "előadás",
+            "targy": "Adatkezelés XML-ben",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": "10:00",
+                "ig": "11:30"
+            },
+            "helyszin": "103-es terem",
+            "oktato": "Dr. Bednarik László",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "03",
+            "típus": "gyakorlat",
+            "targy": "Adatkezelés XML-ben",
+            "idopont": {
+                "nap": "Kedd",
+                "tol": "12:00",
+                "ig": "13:30"
+            },
+            "helyszin": "303-as terem",
+            "oktato": "Dr. Bednarik László",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "04",
+            "típus": "előadás",
+            "targy": "Szoftvertechnológia",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "8:00",
+                "ig": "10:00"
+            },
+            "helyszin": "III. előadó",
+            "oktato": "Dr. Mileff Péter",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "gyakorlat",
+            "targy": "Szoftvertechnológia",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "10:00",
+                "ig": "12:00"
+            },
+            "helyszin": "III. előadó",
+            "oktato": "Dr. Mileff Péter",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "gyakorlat",
+            "targy": "Mesterséges Intelligencia alapok",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "10:00",
+                "ig": "12:00"
+            },
+            "helyszin": "X. előadó",
+            "oktato": "Fazekas Levente",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "előadás",
+            "targy": "Vállalati Információs rendszerek",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "14:00",
+                "ig": "16:00"
+            },
+            "helyszin": "103. terem",
+            "oktato": "Dr. Sasvári Péter",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "előadás",
+            "targy": "Mesterésges Intelligencia alapok",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "16:00",
+                "ig": "18:00"
+            },
+            "helyszin": "XXXII. előadó",
+            "oktato": "Dr. Kunné Tamás Judit",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "gyakorlat",
+            "targy": "Vállalati információs rendszerek",
+            "idopont": {
+                "nap": "Szerda",
+                "tol": "18:00",
+                "ig": "20:00"
+            },
+            "helyszin": "103. terem",
+            "oktato": "Dr. Sasvári Péter",
+            "szak": "Programtervező Informatikus"
+        },
+        {
+            "id": "05",
+            "típus": "gyakorlat",
+            "targy": "Számítógép Hálózatok",
+            "idopont": {
+                "nap": "Csütörtök",
+                "tol": "10:00",
+                "ig": "12:00"
+            },
+            "helyszin": "III. előadó",
+            "oktato": "Dr. Kovács Szilveszter",
+            "szak": "Programtervező Informatikus"
+        }
+    ]
+}
