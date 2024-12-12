@@ -32,7 +32,7 @@ public class DOMWriteHK74CE {
             transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
             transformer.transform(source, result);
 
-            System.out.println("\nA dokumentum sikeresen mentve az XMLHK74CE1.xml fájlba!");
+            System.out.println("\nA dokumentum sikeresen mentve az XML_HK74CE1.xml fájlba!");
 
         } catch (Exception e) {
             e.printStackTrace();
