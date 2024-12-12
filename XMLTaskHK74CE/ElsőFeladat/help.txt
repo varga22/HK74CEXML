@@ -1,0 +1,24 @@
+Oké vannak kisebb változások, ezek alapján dolgozz a továbbiakban:
+Entitások (5db) és Attribútumai (min. 4db entitásonként):
+
+Diak: diak_id(elsodleges_kulcs), név (összetett: keresztnev + vezetéknev), szul_datum, email (többértékű), lakcim (összetett, ezen belül: varos, utca, hazszam).
+
+Tanar: tanar_id (kulcs), nev (összetett: keresztnev + vezeteknev), beosztas, szakterulet.
+
+Tantargy: targy_id (kulcs), nev, kredit, nyelv (többértékű).
+
+Terem: terem_id (kulcs), nev, kapacitas, felszereles (többértékű).
+
+Kurzus: kurzus_id, idopont, tipus (osszetett: eloadas/gyakorlat), letszam.
+
+Kapcsolatok:
+
+Diak-Kurzus: N:M kapcsolat neve: ertekeles
+Tanar-Kurzus: 1:N kapcsolat neve: K-Tan
+Kurzus-Tantargy: 1:N kapcsolat neve: K-Tgy
+Kurzus-Terem: 1:1 kapcsolat neve: K-Ter
+
+A Kurzus-Diak kapcsolatnak(ertekeles N:M) van két attribútuma:
+vizsga, alairas
+
+Ezek a módosítások.
